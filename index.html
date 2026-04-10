@@ -142,7 +142,7 @@ function startGameScreen(timestamp) {
     const phase2 = 2 * Player.liftDuration / 3;
 
     if (elapsed < phase1) {
-      ctx.drawImage(Assets.midLiftingSprite, x, y, 385, 410);
+      ctx.drawImage(Player.midLiftingSprite, x, y, 385, 410);
     } else if (elapsed < phase2) {
       ctx.drawImage(Player.liftingSprite, x, y, scaledWidth, scaledHeight);
     } else {
