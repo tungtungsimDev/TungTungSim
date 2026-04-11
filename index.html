@@ -217,17 +217,17 @@ function startShopScreen(timestamp) {
   }
 
   ctx.fillStyle = "white";
-  ctx.fillText("Cost: " + cost, 435, 155);
+  ctx.fillText("Cost: " + cost, 435, 115);
 
   if (img) {
     ctx.drawImage(img, 425, 150, 150, 150);
   }
 
   ctx.fillStyle = "black";
-  ctx.fillText(item, shopState === "Angel" ? 415 : (shopState === "Catcher" ? 376 : 451), 570);
+  ctx.fillText(item, shopState === "Angel" ? 415 : (shopState === "Catcher" ? 376 : 451), 530);
 
   ctx.fillStyle = "white";
-  ctx.fillText(ownedText, 375, 450);
+  ctx.fillText(ownedText, 375, 410);
 
   if (catcherActive === "Yes") {
     Player.strength = 0;
