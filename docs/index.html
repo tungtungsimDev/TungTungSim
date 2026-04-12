@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tung Tung Simulator</title>
+<style>
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+	text-align: center;
+}
+canvas {
+	width: 1000px;
+	height: 600px;
+	display: block;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script src="TungTungSimV1_0.js"></script>
+<script>
+	var engine = new Engine({
+		canvas: document.getElementById("canvas"),
+		executable: "TungTungSimV1_0",
+		onProgress: function (current, total) {},
+	});
+	engine.start();
+</script>
+</body>
+</html>
